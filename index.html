@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header><h1>Todolist</h1></header>
+        <nav>
+            <button class="button-openModal">Добавить задачу</button>
+            <select name="Сортировать" id="sortSelect">
+                <option value="">Сортировать:</option>
+                <option value="Показать все">Показать все</option>
+                <option value="Активные">Активные</option>
+                <option value="Выполненные">Выполненные</option>
+            </select>
+        </nav>
+        <main>
+            <ul class="todoList">
+            </ul>
+            <div class="modal modal-noactive">
+                <input class="todo-input" type="text" placeholder="Введите задачу">
+                <button class="todo-addBtn">Добавить задачу</button>
+            </div>
+        </main>
+
+    </div>
+    <script src="localstorage.js"></script>
+
+</body>
+</html>
